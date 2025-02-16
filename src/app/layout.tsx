@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Image from "next/image";
+import ModalChat from "@/components/ModalChat";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const figtreeFont = localFont({
+  src: "./fonts/Figtree.ttf",
+  variable: "--font-figtree-sans",
+  weight: "100 200 300 400 500 600 700 800 900",
 });
 
 export const metadata: Metadata = {
@@ -26,9 +23,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${figtreeFont.variable} antialiased min-h-screen bg-green-100`}
       >
-        {children}
+        <div className="h-full">
+          <ModalChat />
+          <nav className="bg-green-600">
+            <div className="p-4 max-w-7xl m-auto">
+              <div className="flex items-center justify-between gap-2">
+                <h1 className="text-white text-4xl font-bold">
+                  Asistente virtual - UTS
+                </h1>
+                <Image
+                  src={"/images/uts.png"}
+                  alt="Unidades tecnológicas de santander"
+                  width={100}
+                  height={100}
+                  className="rounded-md"
+                />
+              </div>
+            </div>
+          </nav>
+          {children}
+        </div>
       </body>
     </html>
   );
