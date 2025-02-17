@@ -1,9 +1,8 @@
 'use client'
-import { stopSpeaker } from "@/helpers/speaker";
+
 import { IconMessageCircleQuestion } from "@tabler/icons-react";
-import Modal from "./Modal";
-import { useState } from "react";
 import { useModalStore } from "@/store/modalStore";
+import { stopSpeaker } from "@/helpers/speaker";
 
 export default function ButtonChat() {
   const setIsOpen = useModalStore(store => store.setIsOpen)
@@ -11,7 +10,7 @@ export default function ButtonChat() {
   function onClick() {
     setTimeout(() => {
       stopSpeaker()
-    }), 200
+    }, 200)
     setIsOpen(true)
   }
   return (

@@ -3,7 +3,6 @@ import ButtonStopSpeaker from "@/components/ButtonStopSpeaker";
 import Card from "@/components/Card";
 import CardsInformacion from "@/components/CardsInformation";
 import RecordConversation from "@/components/RecordConversation";
-import RecordingButton from "@/components/RecordingButton";
 import { INFORMATION } from "@/helpers/information";
 import { QUESTION } from "@/helpers/questions";
 

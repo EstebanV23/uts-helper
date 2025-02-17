@@ -29,6 +29,7 @@ export default function Card({
     if (startSpeaker) {
       onClick()
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

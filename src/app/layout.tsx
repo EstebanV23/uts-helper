@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Image from "next/image";
 import ModalChat from "@/components/ModalChat";
+import Transcriptor from "@/components/Transcriptor";
+import { Toaster } from "react-hot-toast";
 
 const figtreeFont = localFont({
   src: "./fonts/Figtree.ttf",
@@ -27,6 +29,8 @@ export default function RootLayout({
       >
         <div className="h-full">
           <ModalChat />
+          <Toaster />
+          <Transcriptor />
           <nav className="bg-green-600">
             <div className="p-4 max-w-7xl m-auto">
               <div className="flex items-center justify-between gap-2">

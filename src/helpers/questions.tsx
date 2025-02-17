@@ -1,4 +1,4 @@
-import { IconProgressHelp, IconQuestionMark, IconTreadmill } from "@tabler/icons-react"
+import { IconProgressHelp } from "@tabler/icons-react"
 import { InfoUts } from "./information"
 
 export const QUESTION: InfoUts[] = [
