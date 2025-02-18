@@ -1,4 +1,4 @@
-import { IconTreadmill } from "@tabler/icons-react"
+import { IconTreadmill, IconBriefcase2Filled } from "@tabler/icons-react"
 import { ReactNode } from "react"
 
 export type InfoUts = {
@@ -11,7 +11,7 @@ export const INFORMATION: InfoUts[] = [
   {
     name: 'Bienestar institucional',
     description: 'Bienestar institucional es la dependencia administrativa que brinda, promueve y trabaja para el buen desarrollo de la actividad académica, contribuyendo activamente en la formación integral de la comunidad uteísta a través de la implementación de programas que orienten el desarrollo físico, psico-afectivo, espiritual, potencial individual y colectivo del estudiante, profesores y personal administrativo que propenden por el mejoramiento de su calidad de vida.',
-    icon: <IconTreadmill size={24} strokeWidth={1.5} />
+    icon: <IconBriefcase2Filled size={24} strokeWidth={1.5} />
   },
   {
     name: 'Póliza estudiantil',
